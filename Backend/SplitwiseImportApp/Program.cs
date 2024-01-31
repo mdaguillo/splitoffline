@@ -79,14 +79,12 @@ namespace SplitwiseImportApp
                         var catherineParticipant = new ExpenseParticipant
                         {
                             ParticipantId = catherine.Id,
-                            Share = 0,
                             AmountOwed = row.CatherineAmount
                         };
 
                         var mikeParticipant = new ExpenseParticipant
                         {
                             ParticipantId = mike.Id,
-                            Share = 0,
                             AmountOwed = row.MikeAmount
                         };
 
