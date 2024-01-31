@@ -8,7 +8,6 @@
     {
         public Guid ExpenseID { get; set; }
         public Guid ParticipantId { get; set; }
-        public decimal Share { get; set; }
         public decimal AmountOwed { get; set; } 
         public User User { get; set; }
         public Expense Expense { get; set; }  
@@ -22,7 +21,6 @@
             builder.Property(ep => ep.ExpenseID);
             builder.Property(ep => ep.ParticipantId);
             builder.Property(ep => ep.AmountOwed).HasColumnType("decimal(9,2)").IsRequired();
-            builder.Property(ep => ep.Share).HasColumnType("decimal(3,2)").IsRequired();
 
             builder.HasOne(ep => ep.Expense)
                 .WithMany(e => e.ExpenseParticipants)

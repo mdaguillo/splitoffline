@@ -19,5 +19,6 @@ public class BudgetAppDbContext : DbContext
         modelBuilder.ApplyConfiguration(new CategoryConfiguration());
         modelBuilder.ApplyConfiguration(new ExpenseConfiguration());
         modelBuilder.ApplyConfiguration(new ExpenseParticipantConfiguration());
+        modelBuilder.ApplyConfiguration(new RecurringExpenseConfiguration());
     }
 }
