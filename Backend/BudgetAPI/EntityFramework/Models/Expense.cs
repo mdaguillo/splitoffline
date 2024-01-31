@@ -11,6 +11,7 @@
         public string Description { get; set; }
         public decimal Amount { get; set; } = 0;
         public DateTime DateCreated { get; set; } = DateTime.UtcNow;
+        public bool IsPaid { get; set; }
         public Guid? CategoryID { get; set; }
         public Category? Category { get; set; }
         public List<ExpenseParticipant> ExpenseParticipants { get; set; } = new List<ExpenseParticipant>();
@@ -20,6 +21,9 @@
     {
         public void Configure(EntityTypeBuilder<Expense> builder)
         {
+            builder.HasIndex(e => e.IsPaid);
+            builder.HasIndex(e => e.Description);
+
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Description).IsRequired();
             builder.Property(e => e.Amount).HasColumnType("decimal(9,2)").IsRequired();

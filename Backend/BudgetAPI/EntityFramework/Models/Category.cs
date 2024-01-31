@@ -16,6 +16,8 @@ namespace BudgetAPI.EntityFramework.Models
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
+            builder.HasIndex(c => c.CategoryName).IsUnique();
+
             builder.HasKey(c => c.Id);
             builder.Property(c => c.CategoryName).IsRequired();
             builder.HasMany(c => c.Expenses).WithOne(c => c.Category);
