@@ -3375,11 +3375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj",
       "projectName": "BudgetAPI",
-      "projectPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj",
+      "projectPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj",
       "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\obj\\",
+      "outputPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",

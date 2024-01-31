@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj": {}
+    "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj": {
+    "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj",
         "projectName": "BudgetAPI",
-        "projectPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj",
+        "projectPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj",
         "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\obj\\",
+        "outputPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj": {
+    "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj",
         "projectName": "SplitwiseImportApp",
-        "projectPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj",
+        "projectPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\SplitwiseImportApp\\SplitwiseImportApp.csproj",
         "packagesPath": "C:\\Users\\Mike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\SplitwiseImportApp\\obj\\",
+        "outputPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\SplitwiseImportApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj": {
-                "projectPath": "C:\\Users\\Mike\\source\\repos\\BudgetApp\\Backend\\BudgetAPI\\BudgetAPI.csproj"
+              "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj": {
+                "projectPath": "C:\\Users\\Mike\\source\\repos\\splitoffline\\Backend\\BudgetAPI\\BudgetAPI.csproj"
               }
             }
           }
