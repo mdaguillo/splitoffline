@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <v-app class="pa-0" id="app">
     <v-main>
@@ -18,6 +16,19 @@
     </v-bottom-navigation>
   </v-app>
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+import { useExpensesStore } from '@/stores/expensesStore.js';
+
+onMounted(async () => {
+  console.log("Pre loading api data");
+  const store = useExpensesStore();
+  await store.fetchExpenses();
+  console.log("Finished fetched expenses");
+});
+</script>
+
 
 <style>
 

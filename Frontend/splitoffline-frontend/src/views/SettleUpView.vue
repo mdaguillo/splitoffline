@@ -4,7 +4,13 @@
   </v-container>
 </template>
 
-<script setup></script>
+<script setup>
+import {onMounted} from 'vue';
+
+onMounted(() => {
+  console.log("Entered the onMounted function for the main SettleUp view")
+});
+</script>
 
 <style>
 

@@ -5,6 +5,11 @@
 </template>
 
 <script setup>
+import {onMounted} from 'vue';
+
+onMounted(() => {
+  console.log("Entered the onMounted function for the main Settings view")
+});
 </script>
 
 <style>

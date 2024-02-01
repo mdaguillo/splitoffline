@@ -7,7 +7,7 @@
           class="mx-auto text-center">
           <v-card-text class="pa-0">
             <div>total balance</div>
-            <div>{{ owedBalance === 0 ? '$0' : owedBalance < 0 ? '-$' + owedBalance : '+$' + owedBalance }}</div>            
+            <div>{{ store.owedBalance === 0 ? '$0' : store.owedBalance < 0 ? '-$' + store.owedBalance : '+$' + store.owedBalance }}</div>            
           </v-card-text>
         </v-card>
       </v-col>
@@ -21,34 +21,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue';
-import expensesService from '@/services/ExpensesService.js';
-const userId = 'af2b1549-e908-4a19-b679-3263974518d0';
-
-const expenses = ref([]);
-onMounted(() => {
-  expensesService.getExpenses().then((response) => {
-    expenses.value = response.data;
-  }).catch((error) => {
-    console.log(error);
-  });
-});
-
-
-const owedBalance = computed(() => 
-{
-  const sum = expenses.value.filter((expense) => {
-    return !expense.isPaid && expense.expenseParticipants.some((participant) => participant.userId === userId);
-  }).map((expense) => {
-    const participant = expense.expenseParticipants.find((x) => x.userId === userId);
-    return participant.amountOwed;
-  }).reduce((total, amountOwed) => {
-    return total + amountOwed;
-  }, 0); 
-  
-  return sum;
-});
-
+//import { ref, onMounted, computed } from 'vue';
+import { useExpensesStore } from '@/stores/expensesStore';
+const store = useExpensesStore();
 </script>
 
 <style>
