@@ -1,29 +1,24 @@
-<script setup>
-import MyBalance from "./components/MyBalance.vue";
-import CategoryList from "./components/CategoryList.vue"
-</script>
+<script setup></script>
 
 <template>
-  <v-app>
+  <v-app class="pa-0" id="app">
     <v-main>
-      <my-balance />
-      <category-list />
+      <router-view/>
     </v-main>
     <v-bottom-navigation grow>
-      <v-btn value="Home">
-        <v-icon icon="mdi-home"></v-icon>
+      <v-btn :to="{ name: 'home' }">
         <span>Home</span>
       </v-btn>
-      <v-btn value="Add">
-        <v-icon icon="mdi-plus-circle"></v-icon>
+      <v-btn :to="{ name: 'newExpense' }">
         <span>New Expense</span>
       </v-btn>
-      <v-btn value="Settings">
-        <v-icon icon="mdi-cog"></v-icon>
+      <v-btn :to="{ name: 'settings' }">
         <span>Settings</span>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
 </template>
 
-<style scoped></style>
+<style>
+
+</style>

@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import MyBalance from "@/components/MyBalance.vue";
+import CategoryList from "@/components/CategoryList.vue"
+</script>
 
 <template>
-  <main>
-    <h1>Welcome Home</h1>
-  </main>
+  <my-balance />
+  <category-list />
 </template>

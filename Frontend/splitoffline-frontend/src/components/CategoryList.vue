@@ -1,7 +1,15 @@
 <template>
-  <v-container>
-    <category-list-item/>
-    <category-list-item/>
+  <v-container class="pa-0 mt-4">
+    <v-row dense>
+      <v-col>
+        <category-list-item/>
+      </v-col>
+    </v-row>
+    <v-row dense>
+      <v-col>
+        <category-list-item/>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
